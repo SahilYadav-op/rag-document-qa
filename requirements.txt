@@ -1,0 +1,4 @@
+streamlit==1.65.0
+cohere==7.3.0
+pinecone==10.2.0
+PyMuPDF==1.28.2

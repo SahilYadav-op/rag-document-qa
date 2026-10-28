@@ -1,0 +1,8 @@
+[
+  {"question": "How many characters does a chunk hold?", "expect": "1,000 characters", "page": 1, "answer_contains": "1,000"},
+  {"question": "By how much do neighbouring chunks overlap?", "expect": "150 characters", "page": 1, "answer_contains": "150"},
+  {"question": "How many numbers are in an embedding?", "expect": "1,024 numbers", "page": 1, "answer_contains": "1,024"},
+  {"question": "How many chunks does the reranker keep?", "expect": "best three", "page": 2, "answer_contains": "three"},
+  {"question": "What measure compares the direction of two vectors?", "expect": "cosine similarity", "page": 2, "answer_contains": "cosine"},
+  {"question": "What kind of PDF needs OCR first?", "expect": "scanned PDF", "page": 3, "answer_contains": "scan"}
+]
