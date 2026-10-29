@@ -1,6 +1,10 @@
 # RAG Document QA
 
-![Python 3.11](https://img.shields.io/badge/python-3.11-blue) ![Licence: MIT](https://img.shields.io/badge/licence-MIT-lightgrey)
+[![Live demo](https://img.shields.io/badge/live%20demo-Streamlit-ff4b4b)](https://rag-document-app-mini-project.streamlit.app/) ![Python 3.11](https://img.shields.io/badge/python-3.11-blue) ![Licence: MIT](https://img.shields.io/badge/licence-MIT-lightgrey)
+
+**Live demo:** https://rag-document-app-mini-project.streamlit.app/
+
+The demo asks for your own Cohere and Pinecone API keys in the sidebar. They stay in your browser session and are not stored. Press "Use the sample PDF" to try it without a document of your own. Streamlit's free plan puts an app to sleep when nobody has used it for a while, so the first visit can take a moment.
 
 Upload a PDF, ask questions, and get answers that come only from the document, with the pages they came from. It is a retrieve-and-rerank RAG app built with Cohere, Pinecone, PyMuPDF and Streamlit.
 
