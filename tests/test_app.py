@@ -48,6 +48,13 @@ def test_the_page_starts_and_asks_for_keys():
     assert at.chat_input[0].disabled
 
 
+def test_the_sidebar_links_to_the_author():
+    at = start()
+    sidebar_text = " ".join(m.value for m in at.sidebar.markdown)
+    assert "[GitHub](https://github.com/SahilYadav-op)" in sidebar_text
+    assert "[LinkedIn](https://www.linkedin.com/in/sahilgod01/)" in sidebar_text
+
+
 def test_the_sample_pdf_is_ingested_and_a_question_is_answered(pinecone_client):
     at = load_sample(add_keys(start()))
     assert not at.exception

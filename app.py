@@ -17,6 +17,8 @@ from rag.render import neutralize_links
 ROOT = Path(__file__).resolve().parent
 SAMPLE_PDF = ROOT / "samples" / "how-rag-works.pdf"
 REPO_URL = "https://github.com/SahilYadav-op/rag-document-qa"
+GITHUB_URL = "https://github.com/SahilYadav-op"
+LINKEDIN_URL = "https://www.linkedin.com/in/sahilgod01/"
 
 st.set_page_config(page_title="RAG Document QA", layout="centered")
 
@@ -112,6 +114,8 @@ with st.sidebar:
             "5. The answer shows the pages it used."
         )
     st.markdown(f"[Source code]({REPO_URL})")
+    st.divider()
+    st.markdown(f"Built by **Sahil Yadav**  \n[GitHub]({GITHUB_URL})  \n[LinkedIn]({LINKEDIN_URL})")
 
 chunk_overlap = min(chunk_overlap, chunk_size // 2)
 settings = replace(
